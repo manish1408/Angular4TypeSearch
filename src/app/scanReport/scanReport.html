@@ -1,0 +1,433 @@
+ <div id="page-header" class="bg-gradient-9">
+        <div id="mobile-navigation">
+            <button id="nav-toggle" class="collapsed" data-toggle="collapse" data-target="#page-sidebar"><span></span></button>
+            <a href="index.html" class="logo-content-small" title="Skarpline Secure"></a>
+        </div>
+        <div id="header-logo" class="logo-bg">
+            <a href="index.html" class="logo-content-big" title="Skarpline Secure">
+                Skarpline Secure
+            </a>
+            <a id="close-sidebar" href="#" title="Close sidebar">
+                <i class="glyph-icon icon-angle-left"></i>
+            </a>
+        </div>
+
+        <div class="header-message">
+                <h2>
+                    Scan results for "{{showScannedUrl}}" 
+                </h2>
+                <div class="information">
+                    Make your site compliant to GDPR in four simple steps
+                </div>
+            </div>
+    </div>
+    <div id="page-content-wrapper" class="scanReport">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-holder">
+                        <div class="example-box-wrapper">
+                            <div id="form-wizard-3" class="form-wizard">
+                                <ul>
+                                    <li class="active" (click)="selectedStep = 'step-1'" [ngClass]="{'active' : selectedStep === 'step-1'}">
+                                        <a href="#step-1" class="step-1-tog" data-toggle="tab">
+                                            <label class="wizard-step">1</label>
+                                            <span class="wizard-description">
+                                            Position
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="" (click)="selectedStep = 'step-2'" [ngClass]="{'active' : selectedStep === 'step-2'}">
+                                        <a href="#step-2" class="step-2-tog" data-toggle="tab"   aria-expanded="true">
+                                            <label class="wizard-step">2</label>
+                                            <span class="wizard-description">
+                                                Compliance Type
+                                            </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="" (click)="selectedStep = 'step-3'" [ngClass]="{'active' : selectedStep === 'step-3'}">
+                                        <a href="#step-3" class="step-3-tog" data-toggle="tab">
+                                            <label class="wizard-step">3</label>
+                                            <span class="wizard-description">
+                                                Text Customization
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="" (click)="selectedStep = 'step-4'" [ngClass]="{'active' : selectedStep === 'step-4'}">
+                                        <a href="#step-4" class="step-4-tog" data-toggle="tab">
+                                            <label class="wizard-step">4</label>
+                                            <span class="wizard-description">
+                                                Trigger Settings
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="step-1" [ngClass]="{'active' : selectedStep === 'step-1'}">
+                                        <div class="content-box">
+                                            <div class="content-box-wrapper">
+                                                <h3>Select Position</h3>
+                                                <div class="spacer"> </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" (click)="selectedTheme = 'theme-1'" [ngClass]="{'selected' : selectedTheme === 'theme-1'}" id="theme-1">
+                                                                    <img src="assets/images/light-top.png" class="img-responsive" />
+                                                                    <div>Top Dark</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" (click)="selectedTheme = 'theme-2'" [ngClass]="{'selected' : selectedTheme === 'theme-2'}" id="theme-2">
+                                                                    <img src="assets/images/dark-top.png" class="img-responsive" />
+                                                                    <div>Top Light</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" (click)="selectedTheme = 'theme-3'" [ngClass]="{'selected' : selectedTheme === 'theme-3'}" id="theme-3">
+                                                                    <img src="assets/images/light-bottom.png" class="img-responsive" />
+                                                                    <div>Bottom Dark</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" (click)="selectedTheme = 'theme-4'" [ngClass]="{'selected' : selectedTheme === 'theme-4'}" id="theme-4">
+                                                                    <img src="assets/images/dark-bottom.png" class="img-responsive" />
+                                                                    <div>Bottom Light</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" (click)="selectedTheme = 'theme-5'" [ngClass]="{'selected' : selectedTheme === 'theme-5'}" id="theme-5">
+                                                                    <img src="assets/images/light-floating.png" class="img-responsive" />
+                                                                    <div>Floating Dark</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" (click)="selectedTheme = 'theme-6'" [ngClass]="{'selected' : selectedTheme === 'theme-6'}" id="theme-6">
+                                                                    <img src="assets/images/dark-floating.png" class="img-responsive" />
+                                                                    <div>Floating Light</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="image-hold"> 
+                                                            <div class="image" [hidden]="selectedTheme.length < 1">
+                                                                <img src="http://api.screenshotlayer.com/api/capture?access_key=57ec21467d097d030641405e47c3f96e&url={{scannedUrl}}&viewport=1440x900&width=900" class="img-responsive image-holder" />                                                                
+                                                            </div>
+                                                            <div class="message" [hidden]="selectedTheme.length > 1">
+                                                                Select the position of your Banner
+                                                            </div>
+                                                        </div>
+                                                        <div class="banner-show {{selectedTheme}}" *ngIf='selectedTheme.length > 1'>
+                                                            <div class="content col-md-12">
+                                                                <div class="line"> </div>
+                                                                <div class="line"> </div>
+                                                                <div class="line"> </div>
+                                                            </div>
+                                                            <div class="clearfix"> </div>
+                                                            <div class="content col-md-9 col-md-offset-3" style="padding-top:10px;">
+                                                                <input type="email" class="form-control pull-left input-sm" id="email">
+                                                                <button class="btn btn-clear pull-left btn-sm">I Agree</button>                                                                
+                                                            </div>
+                                                        </div>                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="spacer"></div>
+                                                <div class="col-md-12 text-center" (click)="selectedStep = 'step-2'">
+                                                    <button type="button" class="btn btn-success btn-lg">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="step-2"  [ngClass]="{'active' : selectedStep === 'step-2'}">
+                                        <div class="content-box">
+                                            <div class="content-box-wrapper">
+                                                <h3>Select the type of data you collect on your website</h3>
+                                                <!--<div class="checkbox-group">Personal Information</div>-->
+                                                <div class="col-md-6" *ngFor="let item of consentForms; let i = index">
+                                                    <div class="checkbox-holder" *ngIf="item.consentGroup === 'personalinfo'">
+                                                        <input type="checkbox" [(ngModel)]="item.isChecked"  id="cbx{{i}}" />
+                                                        <label for="cbx{{i}}">{{item.type}} <br/> <span>{{item.desc}}</span></label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="clearfix"></div>
+                                                <!--<div class="checkbox-group">Banking Information</div>-->
+                                                <div class="col-md-6" *ngFor="let item of consentForms; let i = index">
+                                                    <div class="checkbox-holder" *ngIf="item.consentGroup === 'bankinginfo'">
+                                                        <input type="checkbox" [(ngModel)]="item.isChecked"  id="cbx{{100+i}}" />
+                                                        <label for="cbx{{100+i}}">{{item.type}}</label>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="spacer"></div>
+                                                <div class="col-md-12 text-center" (click)="selectedStep = 'step-3'">
+                                                    <button type="button" class="btn btn-success btn-lg">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="step-3" [ngClass]="{'active' : selectedStep === 'step-3'}">
+                                        <div class="content-box">
+                                            <div class="content-box-wrapper">
+                                                <h3>Edit compliance text</h3>
+                                                <div class="spacer"> </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 compliance-accordian">
+                                                        <div class="panel-group" id="accordion">
+                                                            <div class="panel panel-default" *ngFor="let item of consentForms; let i = index" [hidden]= "item.isChecked === false">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title" (click)= "complianceTextvalues = item.consentText;">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}">{{item.type}}</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="collapse{{i}}" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="form">
+                                                                        <!--<div class="form-group">
+                                                                            <label for="email">Heading Text</label>
+                                                                            <input type="text" (keyup)="onKeyHeading($event)" [(ngModel)]="item.heading" name="heading" class="form-control"/>
+                                                                        </div>-->
+                                                                        <div class="form-group">
+                                                                             <label for="email">Compliance Text</label>
+                                                                             <textarea name="consentText" (keyup)="onKeyComplianceText($event)" [(ngModel)]="item.consentText" style="min-height:170px;" class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                     <div class="col-md-6">
+                                                        <div class="image-hold"> 
+                                                            <div class="image" [hidden]="complianceTextvalues.length < 1">
+                                                                <img src="http://api.screenshotlayer.com/api/capture?access_key=57ec21467d097d030641405e47c3f96e&url={{scannedUrl}}&viewport=1440x900&width=900" class="img-responsive image-holder" />                                                                
+                                                            </div>
+                                                            <div class="message" [hidden]="complianceTextvalues.length > 1">
+                                                                Click on a compliance type to edit 
+                                                            </div>
+                                                        </div>
+                                                        <div class="banner-show {{selectedTheme}}" [hidden]="complianceTextvalues.length < 1">
+                                                            <div class="content col-md-12">
+                                                                <!--<div> <h3> {{headingvalues}} </h3></div>-->
+                                                                <div [innerHTML]="complianceTextvalues"></div>
+                                                            </div>
+                                                            <div class="clearfix"> </div>
+                                                             <div class="content col-md-9 col-md-offset-3" style="padding-top:10px;">
+                                                                <input type="email" class="form-control pull-left input-sm" id="email">
+                                                                <button class="btn btn-clear pull-left btn-sm">I Agree</button>                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="spacer"></div>
+                                                <div class="col-md-12 text-center">
+                                                    <button (click)="selectedStep = 'step-4'" class="btn btn-success btn-lg">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="step-4"  [ngClass]="{'active' : selectedStep === 'step-4'}">
+                                        <div class="content-box">
+                                            <div class="content-box-wrapper">
+                                                <h3>Consent Trigger Settings</h3>
+                                                <div class="spacer"> </div>
+                                                <div class="row">
+                                                    <div class="col-md-8 col-md-offset-2 compliance-accordian">
+                                                        <div class="panel-group" id="accordion2">
+                                                            <div class="panel panel-default" *ngFor="let item of consentForms; let i = index" [hidden]= "item.isChecked === false">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title" (click)= "showOnValue = item.showOn; nextComplianceTextvalues = item.consentText;">
+                                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#xcollapse{{i}}">{{item.type}}</a>
+                                                                    <span class="pull-right panel-info" *ngIf="item.showOn === 'page'"><i>Shown on Page Load</i> </span>
+                                                                    <span class="pull-right panel-info" *ngIf="item.showOn === 'button'"><i>Shown on {{item.type}} Button Click</i> </span>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="xcollapse{{i}}" class="panel-collapse collapse">
+                                                                <div class="panel-body settings-panel"  *ngIf="item.showOn === 'page'">
+                                                                    <div class="checkbox-group">On which Pages you want to show this consent?</div>
+
+                                                                    <div class="checkbox col-md-12">
+                                                                        <label>
+                                                                                <input type="checkbox"> Select All
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/startups/
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/mobile/
+                                                                        </label>
+                                                                    </div>
+                                                                     <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/social/
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/video/apps/
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/video/bullish/
+                                                                        </label>
+                                                                    </div>
+                                                                     <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/video/crunchreport/
+                                                                        </label>
+                                                                    </div>
+                                                                   <!--<div class="radio-holder" id="holder-1">
+                                                                        <div class="col-md-6">
+                                                                            <label>
+                                                                                <input type="radio" [(ngModel)]="item.showOn" (click)= "showOnValue = 'page'" name="showOn{{i}}" value="page">
+                                                                                On Page Load
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <label>
+                                                                                <input type="radio" [(ngModel)]="item.showOn"  (click)= "showOnValue = 'button'" name="showOn{{i}}" value="button">
+                                                                                On Button CLick
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>-->
+                                                                </div>
+                                                                 <div class="panel-body settings-panel"  *ngIf="item.showOn === 'button'">
+                                                                    <div class="checkbox-group">Select the pages on which you require {{item.type}} consent</div>
+
+                                                                    <div class="checkbox col-md-12">
+                                                                        <label>
+                                                                                <input type="checkbox"> Select All
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/startups/
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/mobile/
+                                                                        </label>
+                                                                    </div>
+                                                                     <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/social/
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/video/apps/
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/video/bullish/
+                                                                        </label>
+                                                                    </div>
+                                                                     <div class="checkbox col-md-4">
+                                                                        <label>
+                                                                                <input type="checkbox"> https://techcrunch.com/video/crunchreport/
+                                                                        </label>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                     </div>
+                                                    <!--<div class="col-md-6">
+                                                        <div class="image-hold"> 
+                                                            <div class="image" [hidden]="showOnValue.length < 1">
+                                                                <img src="http://api.screenshotlayer.com/api/capture?access_key=57ec21467d097d030641405e47c3f96e&url={{scannedUrl}}&viewport=1440x900&width=900" class="img-responsive image-holder" />                                                                
+                                                            </div>
+                                                            <div class="message" [hidden]="showOnValue.length > 1">
+                                                                Click on a compliance type to set location 
+                                                            </div>
+                                                        </div>
+                                                        <div class="banner-show {{selectedTheme}}" *ngIf= "showOnValue === 'page'" [hidden]="nextComplianceTextvalues.length < 0">
+                                                            <div class="content col-md-12">
+                                                                <div [innerHTML]="nextComplianceTextvalues"></div>
+                                                            </div>
+                                                            <div class="clearfix"> </div>
+                                                            <div class="spacer"> </div>
+                                                            <div class="content col-md-9 col-md-offset-2">
+                                                                <input type="email" class="form-control pull-left" id="email">
+                                                                <button class="btn btn-success pull-left">I Agree</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="banner-show theme-default" *ngIf= "showOnValue === 'button'">
+                                                            <div class="content col-md-12">
+                                                               Select a button in the list to bind it to the Consent Type
+                                                            </div>
+
+                                                        </div>
+                                                    </div>-->
+                                                <div class="clearfix"></div>
+                                                <div class="spacer"></div>
+                                                <div class="col-md-12 text-center">
+                                                    <button (click)="selectedStep = 'step-4'" class="btn btn-success btn-lg">
+                                                        All Done! Download Consent Script
+                                                    </button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function goToStep(number) {
+            if (number == 1) {
+                $('.step-1-tog').click();
+            }
+            if (number == 2) {
+                $('.step-2-tog').click();
+            }
+            if (number == 3) {
+                $('.step-3-tog').click();
+            }
+            if (number == 4) {
+                $('.step-4-tog').click();
+            }
+        }
+        $('.theme-selector').click(function () {
+            $('.theme-selector').removeClass('selected');
+            $(this).addClass('selected');
+        })
+
+        $('.reason-theme-selector').click(function () {
+            $('.reason-theme-selector').removeClass('selected');
+            $(this).addClass('selected');
+        });
+        $('.content-theme-selector').click(function () {
+            $('.content-theme-selector').removeClass('selected');
+            $(this).addClass('selected');
+        });
+    </script>

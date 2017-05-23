@@ -1,0 +1,511 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/frontend-all-demo.css">
+    <link rel="stylesheet" href="assets/styles/layout.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div id="page-header" class="bg-gradient-9">
+        <div id="mobile-navigation">
+            <button id="nav-toggle" class="collapsed" data-toggle="collapse" data-target="#page-sidebar"><span></span></button>
+            <a href="index.html" class="logo-content-small" title="Skarpline Secure"></a>
+        </div>
+        <div id="header-logo" class="logo-bg">
+            <a href="index.html" class="logo-content-big" title="Skarpline Secure">
+                Skarpline Secure
+            </a>
+            <a id="close-sidebar" href="#" title="Close sidebar">
+                <i class="glyph-icon icon-angle-left"></i>
+            </a>
+        </div>
+
+        <div class="header-message">
+                <h2>
+                    Scan results for "www.techcrunch.com"
+                </h2>
+                <div class="information">
+                    Make your site compliant to GDPR in four simple steps
+                </div>
+            </div>
+    </div>
+    <div id="page-content-wrapper" class="scanReport">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-holder">
+                        <div class="example-box-wrapper">
+                            <div id="form-wizard-3" class="form-wizard">
+                                <ul>
+                                    <li class="active">
+                                        <a href="#step-1" class="step-1-tog" data-toggle="tab">
+                                            <label class="wizard-step">1</label>
+                                            <span class="wizard-description">
+                                            Position
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#step-2" class="step-2-tog" data-toggle="tab" aria-expanded="true">
+                                            <label class="wizard-step">2</label>
+                                            <span class="wizard-description">
+                                                Compliance Type
+                                            </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="#step-3" class="step-3-tog" data-toggle="tab">
+                                            <label class="wizard-step">3</label>
+                                            <span class="wizard-description">
+                                                Text Customization
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#step-4" class="step-4-tog" data-toggle="tab">
+                                            <label class="wizard-step">4</label>
+                                            <span class="wizard-description">
+                                                Preview
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="step-1">
+                                        <div class="content-box">
+                                            <div class="content-box-wrapper">
+                                                <h3>Select Position</h3>
+                                                <div class="spacer"> </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector selected" id="theme-1">
+                                                                    <img src="assets/images/light-top.png" class="img-responsive" />
+                                                                    <div>Top Dark</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" id="theme-2">
+                                                                    <img src="assets/images/dark-top.png" class="img-responsive" />
+                                                                    <div>Top Light</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" id="theme-3">
+                                                                    <img src="assets/images/light-bottom.png" class="img-responsive" />
+                                                                    <div>Bottom Dark</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" id="theme-4">
+                                                                    <img src="assets/images/dark-bottom.png" class="img-responsive" />
+                                                                    <div>Bottom Light</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" id="theme-5">
+                                                                    <img src="assets/images/light-floating.png" class="img-responsive" />
+                                                                    <div>Floating Light</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="theme-selector" id="theme-6">
+                                                                    <img src="assets/images/dark-floating.png" class="img-responsive" />
+                                                                    <div>Floating Dark</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <img src="http://api.screenshotlayer.com/api/capture?access_key=57ec21467d097d030641405e47c3f96e&url=http://www.techcrunch.com&viewport=1440x900&width=900" class="img-responsive image-holder" />
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="spacer"></div>
+                                                <div class="col-md-12 text-center">
+                                                    <button onclick="goToStep(3);" class="btn btn-success btn-lg">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="tab-pane" id="step-2">
+                                        <div class="content-box">
+                                            <div class="content-box-wrapper">
+                                                <h3>Select the type of data you collect on your website</h3>
+                                                <div class="checkbox-group">Personal Information</div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx1" />
+                                                        <label for="cbx1">Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx2" />
+                                                        <label for="cbx2">Gender</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx3" />
+                                                        <label for="cbx3">Date of Birth</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx4" />
+                                                        <label for="cbx4">Nationality</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx5" />
+                                                        <label for="cbx5">Phone Number</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx6" />
+                                                        <label for="cbx6">Home Address</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx7" />
+                                                        <label for="cbx7">Email Address</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx8" />
+                                                        <label for="cbx8">Marital Status</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox"  id="cbx9" />
+                                                        <label for="cbx9">Dependents</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox" id="cbx10" />
+                                                        <label for="cbx10">Work</label>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="checkbox-group">Banking Information</div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox" id="cbx11" />
+                                                        <label for="cbx11">Credit card Number</label>
+                                                        <div class="explain">&nbsp;</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox" id="cbx12" />
+                                                        <label for="cbx12">Permanent Identification Number</label>
+                                                        <div class="explain">&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="checkbox-holder">
+                                                        <input type="checkbox" id="cbx13" />
+                                                        <label for="cbx13">Bank Account Number</label>
+                                                        <div class="explain">&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                 <div class="spacer"></div>
+                                                <div class="col-md-12 text-center">
+                                                    <button onclick="goToStep(2);" class="btn btn-success btn-lg">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="step-3">
+                                        <div class="content-box">
+                                            <div class="content-box-wrapper">
+                                                <h3>Edit compliance text</h3>
+                                                <div class="spacer"> </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 compliance-accordian">
+                                                        <div class="panel-group" id="accordion">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Name</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="collapse1" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                    <div class="form">
+                                                                        <div class="form-group">
+                                                                            <label for="email">Heading Text</label>
+                                                                            <input type="text" class="form-control"/>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                             <label for="email">Compliance Text</label>
+                                                                             <textarea name="" id="" style="min-height:170px;" class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Gender</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="collapse2" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="form">
+                                                                        <div class="form-group">
+                                                                            <label for="email">Heading Text</label>
+                                                                            <input type="text" class="form-control"/>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                             <label for="email">Compliance Text</label>
+                                                                             <textarea name="" id="" style="min-height:170px;" class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Date of Birth</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="collapse3" class="panel-collapse collapse">
+                                                               <div class="panel-body">
+                                                                    <div class="form">
+                                                                        <div class="form-group">
+                                                                            <label for="email">Heading Text</label>
+                                                                            <input type="text" class="form-control"/>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                             <label for="email">Compliance Text</label>
+                                                                             <textarea name="" id="" style="min-height:170px;" class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Nationality</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="collapse4" class="panel-collapse collapse">
+                                                               <div class="panel-body">
+                                                                    <div class="form">
+                                                                        <div class="form-group">
+                                                                            <label for="email">Heading Text</label>
+                                                                            <input type="text" class="form-control"/>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                             <label for="email">Compliance Text</label>
+                                                                             <textarea name="" id="" style="min-height:170px;" class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Phone Number</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="collapse5" class="panel-collapse collapse">
+                                                               <div class="panel-body">
+                                                                    <div class="form">
+                                                                        <div class="form-group">
+                                                                            <label for="email">Heading Text</label>
+                                                                            <input type="text" class="form-control"/>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                             <label for="email">Compliance Text</label>
+                                                                             <textarea name="" id="" style="min-height:170px;" class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                     <div class="col-md-6">
+                                                        <img src="http://api.screenshotlayer.com/api/capture?access_key=57ec21467d097d030641405e47c3f96e&url=http://www.techcrunch.com&viewport=1440x900&width=900" class="img-responsive image-holder" />
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="spacer"></div>
+                                                <div class="col-md-12 text-center">
+                                                    <button onclick="goToStep(4);" class="btn btn-success btn-lg">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="step-4">
+                                        <div class="content-box">
+                                            <div class="content-box-wrapper">
+                                                <h3>Customize location</h3>
+                                                <div class="spacer"> </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 compliance-accordian">
+                                                        <div class="panel-group" id="accordion2">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#xcollapse1">Name</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="xcollapse1" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                   <div class="radio-holder" id="holder-1">
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="example-radio1" value="">
+                                                                                When visiting a page
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="example-radio1" value="">
+                                                                                When clicking a field or bottom
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#xcollapse2">Gender</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="xcollapse2" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="radio-holder" id="holder-1">
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="example-radio1" value="">
+                                                                                When visiting a page
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="example-radio1" value="">
+                                                                                When clicking a field or bottom
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#xcollapse3">Date of Birth</a>
+                                                                </h4>
+                                                                </div>
+                                                                <div id="xcollapse3" class="panel-collapse collapse">
+                                                               <div class="panel-body">
+                                                                    <div class="radio-holder" id="holder-1">
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="example-radio1" value="">
+                                                                                When visiting a page
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="example-radio1" value="">
+                                                                                When clicking a field or bottom
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                     </div>
+                                                    <div class="col-md-6">
+                                                        <img src="http://api.screenshotlayer.com/api/capture?access_key=57ec21467d097d030641405e47c3f96e&url=http://www.techcrunch.com&viewport=1440x900&width=900" class="img-responsive image-holder" />
+                                                    </div>
+                                                <div class="clearfix"></div>
+                                                <div class="spacer"></div>
+                                                <div class="col-md-12 text-center">
+                                                    <button onclick="goToStep(4);" class="btn btn-success btn-lg">
+                                                        All Done! Download Consent Script
+                                                    </button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function goToStep(number) {
+            if (number == 1) {
+                $('.step-1-tog').click();
+            }
+            if (number == 2) {
+                $('.step-2-tog').click();
+            }
+            if (number == 3) {
+                $('.step-3-tog').click();
+            }
+            if (number == 4) {
+                $('.step-4-tog').click();
+            }
+        }
+        $('.theme-selector').click(function () {
+            $('.theme-selector').removeClass('selected');
+            $(this).addClass('selected');
+        })
+
+        $('.reason-theme-selector').click(function () {
+            $('.reason-theme-selector').removeClass('selected');
+            $(this).addClass('selected');
+        });
+        $('.content-theme-selector').click(function () {
+            $('.content-theme-selector').removeClass('selected');
+            $(this).addClass('selected');
+        });
+    </script>
+</body>
+
+</html>

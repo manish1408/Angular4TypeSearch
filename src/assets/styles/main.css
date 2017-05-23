@@ -1,0 +1,543 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.home .dataTables_filter button, .home .dataTables_filter input {
+  margin-right: 5px;
+  margin-left: 5px; }
+
+.home .tab-pane {
+  padding: 0px; }
+
+.home .spacer {
+  height: 15px; }
+
+.userdetails input[type='color'] {
+  padding: 0px;
+  width: 40px;
+  border: none;
+  background: transparent;
+  height: 32px; }
+
+.userdetails .placeholder {
+  background: #ccc;
+  margin-top: 20px;
+  height: 100%; }
+
+.settings input[type='color'] {
+  padding: 0px;
+  width: 40px;
+  border: none;
+  background: transparent;
+  height: 32px; }
+
+.settings .placeholder {
+  background: #ccc;
+  margin-top: 20px;
+  height: 100%; }
+
+.theme input[type='color'] {
+  padding: 0px;
+  width: 40px;
+  border: none;
+  background: transparent;
+  height: 32px; }
+
+.theme .placeholder {
+  background: #ccc;
+  margin-top: 20px;
+  height: 100%; }
+
+.theme .content-box-wrapper {
+  overflow: auto;
+  padding-left: 200px;
+  padding-right: 200px; }
+
+.theme .theme-selector {
+  margin: 15px;
+  cursor: pointer; }
+  .theme .theme-selector.selected {
+    border: solid 4px #00bca4; }
+  .theme .theme-selector:hover {
+    border: solid 4px #00bca4; }
+
+.theme h3 {
+  margin-left: 25px;
+  border-bottom: solid 1px #ccc;
+  padding: 10px 10px 10px 0px; }
+
+.theme .add-new {
+  margin: 15px;
+  cursor: pointer;
+  height: 143px;
+  width: 145px;
+  border-radius: 3px;
+  background: #ccc; }
+  .theme .add-new i {
+    font-size: 46px;
+    color: #00bca4;
+    text-align: center;
+    padding-top: 52px; }
+
+.header-message {
+  text-align: center;
+  margin-right: 255px;
+  padding-top: 11px;
+  color: #fff; }
+  .header-message .information {
+    color: #dddddd; }
+
+.scanReport {
+  /* checkbox aspect */
+  /* checked mark aspect */
+  /* checked mark aspect changes */
+  /* disabled checkbox */ }
+  .scanReport #page-content {
+    margin-left: 0px !important;
+    width: auto !important; }
+  .scanReport .page-holder {
+    padding: 20px; }
+  .scanReport .banner-show {
+    position: absolute;
+    z-index: 999999;
+    width: calc(100% - 20px);
+    padding: 13px 0px; }
+    @media screen and (min-width: 425px) and (max-width: 769px) {
+      .scanReport .banner-show {
+        width: calc(100% - 63px); } }
+    @media screen and (min-width: 770px) and (max-width: 1025px) {
+      .scanReport .banner-show {
+        width: calc(100% - 51px); } }
+    @media screen and (min-width: 1026px) and (max-width: 1441px) {
+      .scanReport .banner-show {
+        width: calc(100% - 62px); } }
+    @media screen and (min-width: 1442px) and (max-width: 2561px) {
+      .scanReport .banner-show {
+        width: calc(100% - 76px); } }
+    .scanReport .banner-show.theme-default {
+      background: white;
+      color: black;
+      top: 0px;
+      font-size: 17px; }
+      @media screen and (min-width: 425px) and (max-width: 769px) {
+        .scanReport .banner-show.theme-default {
+          top: 23px;
+          left: 31px;
+          height: 370px; } }
+      @media screen and (min-width: 770px) and (max-width: 1025px) {
+        .scanReport .banner-show.theme-default {
+          top: 15px;
+          left: 25px;
+          height: 248px; } }
+      @media screen and (min-width: 1026px) and (max-width: 1441px) {
+        .scanReport .banner-show.theme-default {
+          top: 20px;
+          left: 31px;
+          height: 356px; } }
+      @media screen and (min-width: 1442px) and (max-width: 2561px) {
+        .scanReport .banner-show.theme-default {
+          top: 28px;
+          left: 38px;
+          height: 477px; } }
+    .scanReport .banner-show.theme-1 {
+      background: #2f2f2f;
+      color: white;
+      top: 0px; }
+      .scanReport .banner-show.theme-1 .form-control {
+        width: 250px;
+        margin-right: 5px; }
+      @media screen and (min-width: 425px) and (max-width: 769px) {
+        .scanReport .banner-show.theme-1 {
+          top: 23px;
+          left: 31px; } }
+      @media screen and (min-width: 770px) and (max-width: 1025px) {
+        .scanReport .banner-show.theme-1 {
+          top: 15px;
+          left: 5px; } }
+      @media screen and (min-width: 1026px) and (max-width: 1441px) {
+        .scanReport .banner-show.theme-1 {
+          top: 20px;
+          left: 31px; } }
+      @media screen and (min-width: 1442px) and (max-width: 2561px) {
+        .scanReport .banner-show.theme-1 {
+          top: 28px;
+          left: 38px; } }
+    .scanReport .banner-show.theme-2 {
+      background: #ccc;
+      top: 0px; }
+      .scanReport .banner-show.theme-2 .form-control {
+        width: 250px;
+        margin-right: 5px; }
+      @media screen and (min-width: 425px) and (max-width: 769px) {
+        .scanReport .banner-show.theme-2 {
+          top: 23px;
+          left: 31px; } }
+      @media screen and (min-width: 770px) and (max-width: 1025px) {
+        .scanReport .banner-show.theme-2 {
+          top: 15px;
+          left: 25px; } }
+      @media screen and (min-width: 1026px) and (max-width: 1441px) {
+        .scanReport .banner-show.theme-2 {
+          top: 20px;
+          left: 31px; } }
+      @media screen and (min-width: 1442px) and (max-width: 2561px) {
+        .scanReport .banner-show.theme-2 {
+          top: 28px;
+          left: 38px; } }
+    .scanReport .banner-show.theme-3 {
+      background: #2f2f2f;
+      bottom: 0px; }
+      .scanReport .banner-show.theme-3 .form-control {
+        width: 250px;
+        margin-right: 5px; }
+      @media screen and (min-width: 425px) and (max-width: 769px) {
+        .scanReport .banner-show.theme-3 {
+          bottom: 120px;
+          left: 31px; } }
+      @media screen and (min-width: 770px) and (max-width: 1025px) {
+        .scanReport .banner-show.theme-3 {
+          bottom: 83px;
+          left: 25px; } }
+      @media screen and (min-width: 1026px) and (max-width: 1441px) {
+        .scanReport .banner-show.theme-3 {
+          bottom: 120px;
+          left: 31px; } }
+      @media screen and (min-width: 1442px) and (max-width: 2561px) {
+        .scanReport .banner-show.theme-3 {
+          bottom: 162px;
+          left: 38px; } }
+    .scanReport .banner-show.theme-4 {
+      background: #ccc;
+      bottom: 0px; }
+      .scanReport .banner-show.theme-4 .form-control {
+        width: 250px;
+        margin-right: 5px; }
+      @media screen and (min-width: 425px) and (max-width: 769px) {
+        .scanReport .banner-show.theme-4 {
+          bottom: 120px;
+          left: 31px; } }
+      @media screen and (min-width: 770px) and (max-width: 1025px) {
+        .scanReport .banner-show.theme-4 {
+          bottom: 83px;
+          left: 25px; } }
+      @media screen and (min-width: 1026px) and (max-width: 1441px) {
+        .scanReport .banner-show.theme-4 {
+          bottom: 120px;
+          left: 31px; } }
+      @media screen and (min-width: 1442px) and (max-width: 2561px) {
+        .scanReport .banner-show.theme-4 {
+          bottom: 162px;
+          left: 38px; } }
+    .scanReport .banner-show.theme-5 {
+      background: #2f2f2f;
+      bottom: 0px;
+      width: 60%;
+      margin-bottom: 25px;
+      margin-right: 25px;
+      right: 0px; }
+      .scanReport .banner-show.theme-5 .form-control {
+        width: 250px;
+        margin-right: 15px; }
+      @media screen and (min-width: 425px) and (max-width: 769px) {
+        .scanReport .banner-show.theme-5 {
+          bottom: 120px;
+          right: 31px; } }
+      @media screen and (min-width: 770px) and (max-width: 1025px) {
+        .scanReport .banner-show.theme-5 {
+          bottom: 83px;
+          right: 25px; } }
+      @media screen and (min-width: 1026px) and (max-width: 1441px) {
+        .scanReport .banner-show.theme-5 {
+          bottom: 120px;
+          right: 31px; } }
+      @media screen and (min-width: 1442px) and (max-width: 2561px) {
+        .scanReport .banner-show.theme-5 {
+          bottom: 162px;
+          right: 38px; } }
+    .scanReport .banner-show.theme-6 {
+      background: #ccc;
+      bottom: 0px;
+      width: 60%;
+      margin-bottom: 25px;
+      margin-right: 25px;
+      right: 0px; }
+      .scanReport .banner-show.theme-6 .form-control {
+        width: 250px;
+        margin-right: 15px; }
+      @media screen and (min-width: 425px) and (max-width: 769px) {
+        .scanReport .banner-show.theme-6 {
+          bottom: 120px;
+          right: 31px; } }
+      @media screen and (min-width: 770px) and (max-width: 1025px) {
+        .scanReport .banner-show.theme-6 {
+          bottom: 83px;
+          right: 25px; } }
+      @media screen and (min-width: 1026px) and (max-width: 1441px) {
+        .scanReport .banner-show.theme-6 {
+          bottom: 120px;
+          right: 31px; } }
+      @media screen and (min-width: 1442px) and (max-width: 2561px) {
+        .scanReport .banner-show.theme-6 {
+          bottom: 162px;
+          right: 38px; } }
+    .scanReport .banner-show .content .line {
+      background-color: rgba(221, 221, 221, 0.54);
+      height: 7px;
+      margin-bottom: 6px; }
+  .scanReport .checkbox-group {
+    color: #00bca4;
+    font-weight: bold;
+    border-bottom: solid 1px #00bca4; }
+  .scanReport .panel-info {
+    color: #000;
+    font-size: 13px; }
+  .scanReport .checkbox-holder {
+    margin: 5px; }
+    .scanReport .checkbox-holder .explain {
+      padding-left: 53px;
+      position: relative;
+      top: -13px;
+      color: #ccc; }
+    .scanReport .checkbox-holder span {
+      line-height: 3px;
+      font-weight: normal;
+      color: #999;
+      font-style: italic;
+      font-size: 12px; }
+  .scanReport .spacer {
+    height: 20px; }
+  .scanReport .image-hold {
+    background: url("../images/desktop-monitor-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 668px; }
+    .scanReport .image-hold .image {
+      height: 515px; }
+    .scanReport .image-hold .message {
+      text-align: center;
+      line-height: 500px;
+      font-size: 25px;
+      color: #9e9e9e; }
+      @media screen and (min-width: 425px) and (max-width: 769px) {
+        .scanReport .image-hold .message {
+          line-height: 417px; } }
+      @media screen and (min-width: 770px) and (max-width: 1025px) {
+        .scanReport .image-hold .message {
+          line-height: 300px; } }
+      @media screen and (min-width: 1026px) and (max-width: 1441px) {
+        .scanReport .image-hold .message {
+          line-height: 400px; } }
+      @media screen and (min-width: 1442px) and (max-width: 2561px) {
+        .scanReport .image-hold .message {
+          line-height: 500px; } }
+    @media screen and (min-width: 425px) and (max-width: 769px) {
+      .scanReport .image-hold {
+        height: 515px; } }
+    @media screen and (min-width: 770px) and (max-width: 1025px) {
+      .scanReport .image-hold {
+        height: 343px; } }
+    @media screen and (min-width: 1026px) and (max-width: 1441px) {
+      .scanReport .image-hold {
+        height: 497px; } }
+    @media screen and (min-width: 1442px) and (max-width: 2561px) {
+      .scanReport .image-hold {
+        height: 668px; } }
+  .scanReport .image-holder {
+    padding: 15px; }
+    @media screen and (min-width: 425px) and (max-width: 769px) {
+      .scanReport .image-holder {
+        height: 413px;
+        padding: 22px 22px; } }
+    @media screen and (min-width: 770px) and (max-width: 1025px) {
+      .scanReport .image-holder {
+        height: 276px;
+        padding: 16px 16px; } }
+    @media screen and (min-width: 1026px) and (max-width: 1441px) {
+      .scanReport .image-holder {
+        height: 398px;
+        padding: 22px 22px; } }
+    @media screen and (min-width: 1442px) and (max-width: 2561px) {
+      .scanReport .image-holder {
+        height: 535px;
+        padding: 29px 28px; } }
+  .scanReport [type="checkbox"]:not(:checked),
+  .scanReport [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px; }
+  .scanReport [type="checkbox"]:not(:checked) + label,
+  .scanReport [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    line-height: 28px; }
+  .scanReport [type="checkbox"]:not(:checked) + label:before,
+  .scanReport [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); }
+  .scanReport [type="checkbox"]:not(:checked) + label:after,
+  .scanReport [type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: .1em;
+    left: 8px;
+    font-size: 1.3em;
+    line-height: 37px;
+    color: #09ad7e;
+    transition: all .2s; }
+  .scanReport [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0); }
+  .scanReport [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1); }
+  .scanReport [type="checkbox"]:disabled:not(:checked) + label:before,
+  .scanReport [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd; }
+  .scanReport [type="checkbox"]:disabled:checked + label:after {
+    color: #999; }
+  .scanReport [type="checkbox"]:disabled + label {
+    color: #aaa; }
+  .scanReport .settings-panel [type="checkbox"]:not(:checked),
+  .scanReport .settings-panel [type="checkbox"]:checked {
+    position: inherit; }
+  .scanReport .settings-panel .checkbox {
+    margin-bottom: 20px; }
+  .scanReport .tab-pane {
+    padding: 0px; }
+  .scanReport .dataTables_filter button, .scanReport .dataTables_filter input {
+    margin-right: 5px;
+    margin-left: 5px; }
+  .scanReport .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 500px;
+    position: absolute; }
+  .scanReport .background-image {
+    background-image: url("./images/secure-privacy-consent.jpg");
+    background-size: contain; }
+  .scanReport #page-content {
+    margin: 0 auto;
+    width: 1400px; }
+  .scanReport .modal-header {
+    height: 45px; }
+  .scanReport input[type='color'] {
+    padding: 0px;
+    width: 40px;
+    border: none;
+    background: transparent;
+    height: 32px; }
+  .scanReport .placeholder {
+    background: #ccc;
+    margin-top: 20px;
+    height: 100%; }
+  .scanReport .content-box-wrapper {
+    overflow: auto; }
+  .scanReport .theme-selector {
+    border: solid 4px #ddd;
+    margin: 0px 15px 15px 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 17px; }
+    .scanReport .theme-selector img {
+      width: 80px;
+      margin: 0 auto;
+      margin-bottom: 5px; }
+    .scanReport .theme-selector.selected {
+      border: solid 4px #00bca4;
+      background: rgba(221, 221, 221, 0.43); }
+    .scanReport .theme-selector:hover {
+      border: solid 4px #00bca4;
+      background: rgba(221, 221, 221, 0.43); }
+  .scanReport .reason-theme-selector {
+    border: solid 4px #ddd;
+    margin: 0px 15px 15px 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 17px; }
+    .scanReport .reason-theme-selector img {
+      width: 100px;
+      margin: 0 auto;
+      margin-bottom: 5px; }
+    .scanReport .reason-theme-selector.selected {
+      border: solid 4px #00bca4;
+      background: rgba(221, 221, 221, 0.43); }
+    .scanReport .reason-theme-selector:hover {
+      border: solid 4px #00bca4;
+      background: rgba(221, 221, 221, 0.43); }
+  .scanReport .compliance-accordian .panel-heading {
+    background: rgba(221, 221, 221, 0.43); }
+  .scanReport .compliance-accordian .panel-title > a {
+    font-size: 15px;
+    font-weight: bold; }
+    .scanReport .compliance-accordian .panel-title > a:hover {
+      color: #00bca4; }
+  .scanReport .content-theme-selector {
+    border: solid 4px #ddd;
+    margin: 0px 15px 15px 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 17px; }
+    .scanReport .content-theme-selector .radio-holder {
+      border-radius: 4px;
+      background: white;
+      padding: 4px;
+      border: solid 1px #ddd;
+      font-size: 14px;
+      margin-top: 10px; }
+    .scanReport .content-theme-selector.selected {
+      border: solid 4px #00bca4;
+      background: rgba(221, 221, 221, 0.43); }
+    .scanReport .content-theme-selector:hover {
+      border: solid 4px #00bca4;
+      background: rgba(221, 221, 221, 0.43); }
+  .scanReport h3 {
+    border-bottom: solid 1px rgba(204, 204, 204, 0.5);
+    padding: 4px 10px 10px 0px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700; }
+  .scanReport .modal-lg {
+    width: 1140px; }
+  .scanReport .add-new {
+    margin: 15px;
+    cursor: pointer;
+    height: 143px;
+    width: 145px;
+    border-radius: 3px;
+    background: #ccc; }
+    .scanReport .add-new i {
+      font-size: 46px;
+      color: #00bca4;
+      text-align: center;
+      padding-top: 52px; }
+  .scanReport .screenshot-holder {
+    width: 100%;
+    background: url("images/desktop-monitor-background.png");
+    height: 500px; }
+
+.pages .dataTables_filter button, .pages .dataTables_filter input {
+  margin-right: 5px;
+  margin-left: 5px; }
+
+.pages .icon-check1 .fa {
+  color: #29b765;
+  font-size: 18px; }
+
+.spacer {
+  height: 20px; }
