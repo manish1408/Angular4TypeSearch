@@ -1,27 +1,36 @@
-[{
-"btnText" : "Search",
-"btnClass" : "btn btn-primary",
-"btnId" : "btn btn-primary",
-"theme" : "Theme1",
-"background-color" : "#cccc",
-"text-color" : "#cccc",
-"background-image" : "url-to-the-image",
-"consent": [{
-    "consentPageURL": "http://somepage.com/test",
-    "consentPageHeading": "Consent for User Pesonal Data",
-    "consentPageVersion": "1.2.1",
-    "consentPageText": "Loerm ipsum doler amet ...."
-},
-{
-    "consentPageURL": "http://somepage.com/test",
-    "consentPageHeading": "Consent for User Pesonal Data",
-    "consentPageVersion": "1.2.1",
-    "consentPageText": "Loerm ipsum doler amet ...."
-},
-{
-    "consentPageURL": "http://somepage.com/test",
-    "consentPageHeading": "Consent for User Pesonal Data",
-    "consentPageVersion": "1.2.1",
-    "consentPageText": "Loerm ipsum doler amet ...."
-}]
+[ {
+    "selectedTheme" : "Theme-1",
+    "consentForms" : [{
+        "id": 1,
+        "type": "Account creation",
+        "desc": "Data needed create a system accounts",
+        "isChecked": false,
+        "consentText": "I agree that ...",
+        "showOn" : "Button",
+        "showOnButtonId" : "someId",
+        "showOnButtonClass" : "css-class",
+        "showOnButtonText" : "Submit",
+        "pages": [
+             "https://techcrunch.com/startups/",
+              "https: //techcrunch.com/video/crunchreport/",
+            "https://techcrunch.com/stories/"
+        ]
+    },
+    {
+        "id": 1,
+        "type": "Account creation",
+        "desc": "Data needed create a system accounts",
+        "isChecked": false,
+        "consentText": "I agree that ...",
+        "showOn" : "Button",
+        "showOnButtonId" : "someId",
+        "showOnButtonClass" : "css-class",
+        "showOnButtonText" : "Submit",
+        "pages": [
+             "https://techcrunch.com/startups/",
+              "https: //techcrunch.com/video/crunchreport/",
+            "https://techcrunch.com/stories/"
+        ]
+    }
+    ]
 }]

@@ -31,7 +31,7 @@
                             <div id="form-wizard-3" class="form-wizard">
                                 <ul>
                                     <li class="active" (click)="selectedStep = 'step-1'" [ngClass]="{'active' : selectedStep === 'step-1'}">
-                                        <a href="#step-1" class="step-1-tog" data-toggle="tab">
+                                         <a href="#step-1" class="step-1-tog" data-toggle="tab">
                                             <label class="wizard-step">1</label>
                                             <span class="wizard-description">
                                             Position
@@ -55,8 +55,8 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="" (click)="selectedStep = 'step-4'" [ngClass]="{'active' : selectedStep === 'step-4'}">
-                                        <a href="#step-4" class="step-4-tog" data-toggle="tab">
+                                    <li class=""  [ngClass]="{'active' : selectedStep === 'step-4'}">
+                                        <a class="step-4-tog">
                                             <label class="wizard-step">4</label>
                                             <span class="wizard-description">
                                                 Trigger Settings
@@ -139,8 +139,8 @@
                                                 </div>
                                                 <div class="clearfix"></div>
                                                 <div class="spacer"></div>
-                                                <div class="col-md-12 text-center" (click)="selectedStep = 'step-2'">
-                                                    <button type="button" class="btn btn-success btn-lg">
+                                                <div class="col-md-12 text-center">
+                                                    <button type="button" [disabled]= "selectedTheme === ''" (click)="selectedStep = 'step-2'" class="btn btn-success btn-lg">
                                                         Next
                                                     </button>
                                                 </div>
@@ -152,10 +152,14 @@
                                             <div class="content-box-wrapper">
                                                 <h3>Select the type of data you collect on your website</h3>
                                                 <!--<div class="checkbox-group">Personal Information</div>-->
-                                                <div class="col-md-6" *ngFor="let item of consentForms; let i = index">
+                                              <div class="col-md-6" *ngFor="let item of consentForms; let i = index">
                                                     <div class="checkbox-holder" *ngIf="item.consentGroup === 'personalinfo'">
-                                                        <input type="checkbox" [(ngModel)]="item.isChecked"  id="cbx{{i}}" />
-                                                        <label for="cbx{{i}}">{{item.type}} <br/> <span>{{item.desc}}</span></label>
+                                                        <input type="checkbox" [(ngModel)]="item.isChecked" (change)="getCheckedCount(item.type)"  id="cbx{{i}}" />
+                                                        <label for="cbx{{i}}">{{item.type}} <br/> <span>
+                                                            {{item.desc}} <br/>
+                                                             <i *ngIf="item.heading.length > 0"> {{item.heading}} </i>
+                                                              <i *ngIf="item.heading.length < 1"> &nbsp; </i>
+                                                        </span></label>
                                                     </div>
                                                 </div>
                                                 
@@ -163,15 +167,15 @@
                                                 <!--<div class="checkbox-group">Banking Information</div>-->
                                                 <div class="col-md-6" *ngFor="let item of consentForms; let i = index">
                                                     <div class="checkbox-holder" *ngIf="item.consentGroup === 'bankinginfo'">
-                                                        <input type="checkbox" [(ngModel)]="item.isChecked"  id="cbx{{100+i}}" />
+                                                        <input type="checkbox" [(ngModel)]="item.isChecked"  (change)="getCheckedCount(item.type)" id="cbx{{100+i}}" />
                                                         <label for="cbx{{100+i}}">{{item.type}}</label>
                                                     </div>
                                                 </div>
                                                 <div class="clearfix"></div>
                                                 <div class="spacer"></div>
-                                                <div class="col-md-12 text-center" (click)="selectedStep = 'step-3'">
-                                                    <button type="button" class="btn btn-success btn-lg">
-                                                        Next
+                                                <div class="col-md-12 text-center" >
+                                                    <button type="button" [disabled]= "checkedConsentCount === 0" (click)="selectedStep = 'step-3'" class="btn btn-success btn-lg">
+                                                         Next
                                                     </button>
                                                 </div>
                                             </div>
@@ -251,9 +255,10 @@
                                                             <div class="panel panel-default" *ngFor="let item of consentForms; let i = index" [hidden]= "item.isChecked === false">
                                                                 <div class="panel-heading">
                                                                 <h4 class="panel-title" (click)= "showOnValue = item.showOn; nextComplianceTextvalues = item.consentText;">
-                                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#xcollapse{{i}}">{{item.type}}</a>
+                                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#xcollapse{{i}}">{{item.type}}
                                                                     <span class="pull-right panel-info" *ngIf="item.showOn === 'page'"><i>Shown on Page Load</i> </span>
                                                                     <span class="pull-right panel-info" *ngIf="item.showOn === 'button'"><i>Shown on {{item.type}} Button Click</i> </span>
+                                                                    </a>
                                                                 </h4>
                                                                 </div>
                                                                 <div id="xcollapse{{i}}" class="panel-collapse collapse">
@@ -430,32 +435,3 @@
 
         </div>
     </div>
-    <script>
-        function goToStep(number) {
-            if (number == 1) {
-                $('.step-1-tog').click();
-            }
-            if (number == 2) {
-                $('.step-2-tog').click();
-            }
-            if (number == 3) {
-                $('.step-3-tog').click();
-            }
-            if (number == 4) {
-                $('.step-4-tog').click();
-            }
-        }
-        $('.theme-selector').click(function () {
-            $('.theme-selector').removeClass('selected');
-            $(this).addClass('selected');
-        })
-
-        $('.reason-theme-selector').click(function () {
-            $('.reason-theme-selector').removeClass('selected');
-            $(this).addClass('selected');
-        });
-        $('.content-theme-selector').click(function () {
-            $('.content-theme-selector').removeClass('selected');
-            $(this).addClass('selected');
-        });
-    </script>

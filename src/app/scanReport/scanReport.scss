@@ -231,14 +231,18 @@
 	}
 	.checkbox-holder {
 		margin: 5px;
+		input[type=checkbox] {
+			position: relative;
+    		top: -30px;
+		}
 		.explain {
 			padding-left: 53px;
 			position: relative;
 			top: -13px;
-			color: #ccc;
+			color: #ccc; 
 		}
 		span {
-			line-height: 3px;
+			line-height: 15px;
 			font-weight: normal;
 			color: #999;
 			font-style: italic;
@@ -307,73 +311,8 @@
 			padding: 29px 28px;
 		}
 	}
-	[type="checkbox"]:not(:checked),
-	[type="checkbox"]:checked {
-	position: absolute;
-	left: -9999px;
-	}
-	[type="checkbox"]:not(:checked) + label,
-	[type="checkbox"]:checked + label {
-	position: relative;
-		padding-left: 40px;
-		cursor: pointer;
-		line-height: 28px;
-	}
-
-/* checkbox aspect */
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #ccc;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
-}
-/* checked mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  content: '✔';
-  position: absolute;
-  top: .1em;
-  left: 8px;
-  font-size: 1.3em;
-  line-height: 37px; 
-  color: #09ad7e;
-  transition: all .2s;
-}
-/* checked mark aspect changes */
-[type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
-}
-[type="checkbox"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1);
-}
-/* disabled checkbox */
-[type="checkbox"]:disabled:not(:checked) + label:before,
-[type="checkbox"]:disabled:checked + label:before {
-  box-shadow: none;
-  border-color: #bbb;
-  background-color: #ddd;
-}
-[type="checkbox"]:disabled:checked + label:after {
-  color: #999;
-}
-[type="checkbox"]:disabled + label {
-  color: #aaa;
-}
 
 .settings-panel {
-	[type="checkbox"]:not(:checked),
-	[type="checkbox"]:checked {
-	position: inherit;
-	}
 	.checkbox {
 		margin-bottom: 20px;		
 	}
@@ -470,9 +409,12 @@
 	.compliance-accordian {
 		.panel-heading{
 			background: rgba(221, 221, 221, 0.43); 
+			padding: 0px;
 		}
 		.panel-title>a {
 			font-size: 15px;
+			padding: 10px 15px;
+			display: block;
 			font-weight: bold;
 			&:hover {
 				color: #00bca4;

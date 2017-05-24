@@ -12,6 +12,7 @@ import { UserdetailsModule } from './userdetails/userdetails.module';
 import { SettingsModule } from './settings/settings.module';
 import { TodolistModule } from './todolist/todolist.module';
 import { ScanReportModule } from './scanReport/scanReport.module';
+import { ReportModule } from './report/report.module';
 import { PagesModule } from './pages/pages.module';
 import { Broadcaster } from './shared/broadcast/broadcast';
 import { ModalModule } from 'ngx-bootstrap';
@@ -28,6 +29,7 @@ import { ModalModule } from 'ngx-bootstrap';
         TodolistModule,
         UserdetailsModule,
         SettingsModule,
+        ReportModule,
         ScanReportModule,
         PagesModule,
         ThemeModule,
