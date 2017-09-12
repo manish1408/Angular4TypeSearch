@@ -19,9 +19,9 @@ if (envConfig.ENV === envConfig.ENVS.DEV)
     gulp.task('serve-dev', function ()
     {
         runSequence(
-            ['sass', 'tsc-app'],
+            ['less', 'tsc-app'],
             ['html', 'css'],
-            ['watch-sass', 'watch-ts', 'watch-html', 'watch-css'], function() {
+            ['watch-less', 'watch-ts', 'watch-html', 'watch-css'], function() {
             startBrowsersync(config.browserSync.dev);
         });
     });
