@@ -1,5 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:300);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+body {
+  font-family: 'Roboto', sans-serif;
+}
 .spacer {
   height: 20px;
 }
@@ -12,9 +14,8 @@
   font-size: 20px;
 }
 .business-header {
-  height: 50vh;
-  min-height: 300px;
-  background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+  height: 560px;
+  background: #168843;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
