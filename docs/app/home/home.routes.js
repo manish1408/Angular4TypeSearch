@@ -1,9 +1,0 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var home_component_1 = require("./home.component");
-exports.HomeRoutes = [
-    { path: 'home', component: home_component_1.HomeComponent },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-];
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9ob21lL2hvbWUucm91dGVzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsbURBQWlEO0FBRXBDLFFBQUEsVUFBVSxHQUFXO0lBQ2hDLEVBQUUsSUFBSSxFQUFFLE1BQU0sRUFBRyxTQUFTLEVBQUUsOEJBQWEsRUFBRTtJQUMzQyxFQUFFLElBQUksRUFBRSxFQUFFLEVBQUksVUFBVSxFQUFFLE9BQU8sRUFBRSxTQUFTLEVBQUUsTUFBTSxFQUFFO0NBQ3ZELENBQUMiLCJmaWxlIjoiYXBwL2hvbWUvaG9tZS5yb3V0ZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSb3V0ZXMgfSBmcm9tICdAYW5ndWxhci9yb3V0ZXInO1xuXG5pbXBvcnQgeyBIb21lQ29tcG9uZW50IH0gZnJvbSAnLi9ob21lLmNvbXBvbmVudCc7XG5cbmV4cG9ydCBjb25zdCBIb21lUm91dGVzOiBSb3V0ZXMgPSBbXG4gIHsgcGF0aDogJ2hvbWUnLCAgY29tcG9uZW50OiBIb21lQ29tcG9uZW50IH0sXG4gIHsgcGF0aDogJycsICAgcmVkaXJlY3RUbzogJy9ob21lJywgcGF0aE1hdGNoOiAnZnVsbCcgfSxcbl07XG4iXX0=
